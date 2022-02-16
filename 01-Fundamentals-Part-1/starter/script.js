@@ -78,7 +78,7 @@ let x = 10 + 5;
 x += 10; // x = x + 10 = 25
 x *= 4; // x = x * 4 = 100
 x++; // x = x + 1
-x--; // 
+x--; //
 x--;
 console.log(x);
 
@@ -143,3 +143,64 @@ else {
     century = 21;
 }
 console.log(century); */
+
+// type conversion
+/* const inputYear = '1991';
+console.log(Number(inputYear) + 18);
+console.log(inputYear + 18);
+
+console.log(Number('Jonas'));
+
+console.log(String(23));
+
+// type coercion
+console.log('I am ' + 23 + ' years old');
+console.log('23' - '10' - 3);
+
+let n = '1' + 1;
+console.log(n);
+console.log('11' - 1); */
+
+/* console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean({}));
+
+const money = 10;
+
+if (money) {
+    console.log("Don't spend it all!")
+} else {
+    console.log('You should get a job!');
+};
+
+let height = 0;
+if (typeof height === 'number') {
+    console.log('Yay! Height is defined!');
+} else {
+    console.log('Height is UNDEFINED');
+} */
+
+
+const age = 18;
+
+if (age === 18) console.log('You just become and adult!');
+
+if (age == 18) console.log('You just become and adult!(Loose)');
+
+const favorite = Number(prompt(`What's your favorite number?`));
+console.log(favorite);
+console.log(typeof favorite);
+
+if (favorite === 23) {
+    console.log('cool!'); 23
+} else if (favorite === 7) {
+    console.log('7 is also cool')
+} else if (favorite === 9) {
+    console.log('9 is also cool')
+}
+else {
+    console.log('Number not 23 or 7 or 9')
+}
+
+if (favorite !== 23) console.log('why not 23');
