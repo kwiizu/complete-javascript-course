@@ -7,9 +7,9 @@ const population = 10;
 console.log(continent);
 console.log(population); */
 
-const isIsland = false;
+/* const isIsland = false;
 const language = 'Swedish';
-
+ */
 /* console.log(typeof isIsland);
 console.log(typeof population);
 console.log(typeof country);
@@ -38,3 +38,17 @@ else {
     console.log(`${country}'s is ${averageCountry - population} millons below average`);
 
 } */
+
+/* const numNeighbour = Number(prompt('How many neighbour countries does your country have?'));
+
+if (numNeighbour === 1) {
+    console.log('Only 1 border!');
+} else if (numNeighbour > 1) {
+    console.log('More than 1 border');
+} else {
+    console.log('No borders');
+}
+
+console.log(numNeighbour); */
+
+// population >= 33 ? console.log(`${country}'s population is above average`) : console.log(`${country}'s population below average`);
