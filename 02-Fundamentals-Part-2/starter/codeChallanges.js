@@ -45,3 +45,81 @@
 // console.log(bills);
 // console.log(tips);
 // console.log(totalAmount);
+
+// let mark = {
+//     firstName: 'Mark',
+//     lastName: 'Miller',
+//     weight: 78,
+//     height: 1.69,
+//     calcBMI: function () {
+//         mark.bmi = this.weight / this.height ** 2
+//         return mark.bmi;
+
+//     }
+
+// };
+
+
+// let john = {
+//     firstName: 'John',
+//     lastName: 'Smith',
+//     weight: 92,
+//     height: 1.95,
+//     calcBMI: function () {
+//         john.bmi = this.weight / this.height ** 2
+//         return john.bmi;
+
+//     }
+// }
+
+// if (mark.calcBMI() > john.calcBMI()) {
+//     console.log(`Mark's  BMI(${mark.bmi}) is higher than John's(${john.bmi})`)
+// } else {
+//     console.log(`John's BMI(${john.bmi}) higher than Mark's BMI(${mark.bmi}) is higher than John's(${john.bmi})`)
+// }
+
+// console.log(mark.calcBMI > john.calcBMI ? `Mark's BMI (${mark.bmi}) is higher than John's BMI (${john.bmi})` : `John's BMI (${john.bmi}) is higher than Mark's BMI (${Mark.bmi})`)
+
+
+
+
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+let tips = [];
+let totals = [];
+
+
+const calcTip = function (bills) {
+    const tip = bills >= 50 && bills <= 300 ? bills * 0.15 : bills * 0.20;
+    // console.log(tip);
+    return tip
+}
+
+for (let i = 0; i < bills.length; i++) {
+    const tip = calcTip(bills[i]);
+    tips.push(tip);
+    totals.push(tip + bills[i])
+
+
+
+}
+console.log(totals);
+console.log(tips);
+// console.log(bills);
+
+// let calcTotals = function () {
+//     totals = [tips] + [bills];
+// };
+// console.log(calcTotals(totals));
+
+
+
+
+
+
+
+
+
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+// const totalAmount = [bills.reduce((total, amount) => total + amount) + tips.reduce((total, amount) => total + amount)];

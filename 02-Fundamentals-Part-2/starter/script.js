@@ -149,15 +149,15 @@ console.log(ages); */
 //     console.log('You have a friend called Steven');
 // }
 
-const alexArray = [
+/* const alexArray = [
     'Alex',
     'Wu',
     2037 - 1987,
     'IT',
     ['Michael', 'Peter', 'Steven']
-];
+]; */
 
-const alex = {
+/* const alex = {
     firstName: 'Alex',
     lastName: 'Wu',
     age: 2037 - 1987,
@@ -165,4 +165,176 @@ const alex = {
     friends: ['Michael', 'Peter', 'Steven']
 };
 
-console.log(alex.friends);
+console.log(alex.lastName);
+console.log(alex['lastName']);
+
+const nameKey = 'Name';
+console.log(alex['first' + nameKey]);
+console.log(alex['last' + nameKey]);
+
+const interestedIn = prompt('what do you want to know about Alex? Choose between firstName, lastName, age, job and friends')
+
+if (alex[interestedIn]) {
+    console.log(alex[interestedIn]);
+
+} else {
+    console.log('Wrong request! Choose between firstName, lastName, age, job and friends')
+}
+
+alex.location = 'Sweden';
+alex['instagram'] = '@kwiizu';
+console.log(alex.instagram);
+
+//challange
+
+console.log(`${alex.firstName} has ${alex.friends.length} friends, and his best friend is called ${alex.friends[0]} `) */
+
+
+// const alex = {
+//     firstName: 'Alex',
+//     lastName: 'Wu',
+//     birthYear: 1987,
+//     job: 'IT',
+//     friends: ['Michael', 'Peter', 'Steven'],
+//     hasDriversLicense: false,
+
+// calcAge: function (birthYear) {
+//     return 2037 - birthYear;
+// }
+// calcAge: function () {
+//     console.log(this);
+//     return 2037 - this.birthYear;
+// }
+//     calcAge: function () {
+//         this.age = 2037 - this.birthYear
+//         return this.age;
+//     },
+//     checkDriversLicense: function () {
+//         if (this.hasDriversLicense) {
+//             this.license = 'has a driving license';
+//             return this.license;
+//         } else {
+//             this.license = 'does not have a driving license';
+//             return this.license;
+//         }
+//     }
+
+// };
+
+// console.log(alex.calcAge());
+// alex.checkDriversLicense();
+// console.log(alex.age);
+
+// console.log(alex['calcAge'](1987));
+
+//chalange "Alex is 50 years old and he has a/no driver's licens"
+
+// console.log(`alex is ${alex.calcAge()} years old and he ${alex.checkDriversLicense()}`);
+
+
+// For loop keeps runnig while condition is TRUE
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lifting weights repetition ${rep}`);
+
+// }
+
+// const alexArray = [
+//     'Alex',
+//     'Wu',
+//     2037 - 1987,
+//     'IT',
+//     ['Michael', 'Peter', 'Steven'],
+//     true,
+//     3232323,
+//     'testtest',
+// ];
+// const types = [];
+
+
+
+// for (let i = 0; i < alexArray.length; i++) {
+//     console.log(alexArray[i], typeof alexArray[i]);
+
+//     //filling types array
+//     // types[i] = typeof alexArray[i];
+//     types.push(typeof alexArray[i]);
+// }
+
+// console.log(types);
+
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//     ages.push(2037 - years[i]);
+// }
+// console.log(ages);
+
+//contiune and break
+// console.log('----ONLY STRINGS----');
+// for (let i = 0; i < alexArray.length; i++) {
+//     if (typeof alexArray[i] !== 'string') continue;
+//     console.log(alexArray[i], typeof alexArray[i]);
+
+// }
+
+// //contiune and break
+// console.log('----BREAK WITH NUMBER----');
+// for (let i = 0; i < alexArray.length; i++) {
+//     if (typeof alexArray[i] === 'number') break;
+//     console.log(alexArray[i], typeof alexArray[i]);
+
+// }
+
+// const alexArray = [
+//     'Alex',
+//     'Wu',
+//     2037 - 1987,
+//     'IT',
+//     ['Michael', 'Peter', 'Steven'],
+//     true,
+
+// ];
+
+// // loop backward
+
+// for (let i = alexArray.length - 1; i >= 0; i--) {
+//     console.log(i, alexArray[i]);
+// }
+
+
+//Loop in a loop
+
+// for (let exercise = 1; exercise < 4; exercise++) {
+//     console.log(`-----Starting exercise ${exercise}`);
+
+//     for (let rep = 1; rep < 6; rep++) {
+//         console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} `);
+//     }
+
+// }
+
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lifting weights repetition ${rep}`);
+
+// }
+
+
+// let rep = 1
+// while (rep <= 10) {
+//     {
+//         console.log(`Lifting weights repetition ${rep}`);
+//         rep++;
+//     }
+
+// }
+
+// let dice = Math.trunc(Math.random() * 6) + 1;
+// console.log(dice);
+
+// while (dice !== 6) {
+//     console.log(`you rolled a ${dice}`);
+//     dice = Math.trunc(Math.random() * 6) + 1;
+//     if (dice === 6) console.log('Loop is about to end...');
+
+// }
