@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // const calcAverage = (a, b, c) => (a + b + c) / 3;
 // const avgDolphin = calcAverage(88, 54, 41);
@@ -6,7 +6,6 @@
 
 // console.log(avgDolphin);
 // console.log(avgKoalas);
-
 
 // const checkWinner = function (avgDolphin, avgKoalas) {
 
@@ -21,14 +20,12 @@
 
 // checkWinner(avgDolphin, avgKoalas);
 
-
 // let tip;
 // const bill = 430;
 // tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
 // const total = bill + tip
 
 // bill >= 50 && bill <= 300 ? console.log(`The bill was ${bill} and tip ${tip}, and the totale value ${bill + tip}`) : console.log(`The bill was ${bill} and tip ${tip}, and the total value ${bill + tip}`);
-
 
 // const calcTip = function (bill) {
 //     const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
@@ -59,7 +56,6 @@
 
 // };
 
-
 // let john = {
 //     firstName: 'John',
 //     lastName: 'Smith',
@@ -80,46 +76,32 @@
 
 // console.log(mark.calcBMI > john.calcBMI ? `Mark's BMI (${mark.bmi}) is higher than John's BMI (${john.bmi})` : `John's BMI (${john.bmi}) is higher than Mark's BMI (${Mark.bmi})`)
 
-
-
-
-
 const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
-let tips = [];
-let totals = [];
-
+const tips = [];
+const totals = [];
+let sum = 0;
 
 const calcTip = function (bills) {
-    const tip = bills >= 50 && bills <= 300 ? bills * 0.15 : bills * 0.20;
-    // console.log(tip);
-    return tip
-}
+  const tip = bills >= 50 && bills <= 300 ? bills * 0.15 : bills * 0.2;
+  // console.log(tip);
+  return tip;
+};
 
 for (let i = 0; i < bills.length; i++) {
-    const tip = calcTip(bills[i]);
-    tips.push(tip);
-    totals.push(tip + bills[i])
-
-
-
+  const tip = calcTip(bills[i]);
+  tips.push(tip);
+  totals.push(tip + bills[i]);
 }
+
+const calcAverage = function (totals) {
+  for (let i = 0; i < totals.length; i++) {
+    sum += totals[i];
+  }
+  // let average = sum / bills.length;
+  // return average;
+};
+
+// const average = calcAverage(totals);
 console.log(totals);
-console.log(tips);
-// console.log(bills);
-
-// let calcTotals = function () {
-//     totals = [tips] + [bills];
-// };
-// console.log(calcTotals(totals));
-
-
-
-
-
-
-
-
-
-// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-
-// const totalAmount = [bills.reduce((total, amount) => total + amount) + tips.reduce((total, amount) => total + amount)];
+calcAverage(totals);
+console.log(sum / totals.length);

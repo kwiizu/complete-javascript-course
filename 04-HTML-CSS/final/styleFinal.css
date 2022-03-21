@@ -1,11 +1,11 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: rgb(255, 255, 195);
+  background-color: rgb(255, 247, 201);
   font-family: Arial;
   font-size: 20px;
   padding: 50px;
@@ -30,11 +30,11 @@ p {
 }
 
 #your-name {
-  background-color: rgb(112, 97, 11);
+  background-color: rgb(255, 220, 105);
   border: 5px solid #444;
   width: 400px;
-  padding: 20px;
-  margin-top: 20px;
+  padding: 25px;
+  margin-top: 30px;
 }
 
 input,
@@ -44,11 +44,11 @@ button {
 }
 
 a {
-  background-color: blueviolet;
+  background-color: yellowgreen;
 }
 
-#shiba-image {
-  width: 400px;
+#course-image {
+  width: 300px;
 }
 
 #your-name h2 {
